@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Spicy-Sale';
+    src: url('./assets//fonts/spicy/SpicySale.eot');
+    src: url('./assets//fonts/spicy/SpicySale.eot?#iefix') format('embedded-opentype'),
+        url('./assets//fonts/spicy/SpicySale.woff2') format('woff2'),
+        url('./assets//fonts/spicy/SpicySale.woff') format('woff'),
+        url('./assets//fonts/spicy/SpicySale.ttf') format('truetype'),
+        url('./assets//fonts/spicy/SpicySale.svg#SpicySale') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  background-color: #797e6d;
+  font-family: "Spicy-Sale";
+}
+.container {
+  justify-content: center;
+  margin: auto;
+  width: 35%;
+  max-height: max-content;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #00000080;
+  background-color: #1f5f5a;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+}
+.tasksSection {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: fit-content;
+}
+.add-list-tasks {
+  width: 100%;
+  overflow-x:hidden ;
+}
+.taskInput {
+  outline: none;
+  border: 1px solid #0c0509;
+  border-radius: 8px;
+  background-color: #a6ad96 ;
+  width: 68%;
+  color: #0c0509;
+  padding: 2%;
+  font-size: 1.25rem;
+}
+.taskInput::placeholder {
+  font-weight: bold;
+  opacity: .5;
+  color: #0c0509;
+}
+.taskInput:focus {
+  border: 1px solid #0c0509;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  outline: none;
+}
+.taskSubmit {
+  background-color: #83cb18;
+  color: #0c0509;
+  border: none;
+  padding: 12px;
+  min-width: 19%;
+  width: fit-content;
+  border-radius: 5px;
+  margin-left: 1%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+}
+.taskSubmit:hover {
+  background-color: #659c13;
+  scale: 0.95;
+  transition: linear .8s;
+  opacity: 1;
+}
+.deleteButton {
+  background-color: transparent;
+  color: #1f5f5a;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 10px;
+  cursor: pointer;
+
+}
+.taskList {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+  padding: 4%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+li {
+  background-color: #a6ad96;
+  color: #1f5f5a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 2% 1% 2% 1%;
+  border: 1px solid #0c0509;
+  border-radius: 8px;
+  margin-bottom: 3%;
+  font-family: "Spicy-Sale";
+}
